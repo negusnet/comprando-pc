@@ -1,0 +1,153 @@
+
+h1 {
+    font-family:monospace;
+    color: white;
+    text-align:center;
+}
+
+html {
+    height:100%;
+}
+
+body {
+    margin:0;
+    height: 100vh;
+        background: #0f2027;
+        background: linear-gradient(120deg, #2c5364, #203a43 100%);
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        font-family: 'Jua', sans-serif;
+}
+
+
+/* ESTE ES LA ANIMACION DE LAS IMAGENES*/
+div.gallery {
+    border : 5px #ccc;
+    opacity: 1;
+    
+}
+
+.img {
+    max-width: 100%;
+}
+
+div.gallery:hover {
+    border: 1px solid whitesmoke;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+    background: green;
+    color: #fff;
+    font-size: 34px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 5px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 40%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Transitions */
+.info {
+    /*cubic-bezier transition to give it some bounce. It
+affects the height of the text container in this case.*/
+    transition: all 0.5s cubic-bezier(.48,-0.28,.41,1.4); 
+}
+
+.info p {
+    transition: all 0.4s ease-out;
+}
+
+  /* Other styles */
+.card:hover .info {
+    height: 12em;
+}
+
+.card:hover .info p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*LA INFORMACION QUE APARECE DEBAJO DE LAS CUATRO IMAGENES*/
+.info {
+    text-align: center;
+    background: #fff;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em 1.5em;
+    overflow: hidden;
+    height: 4em;
+}
+
+.info p {
+    opacity: 0;
+    transform: translateY(2em);
+}
+
+
+/*BOTON*/
+.btn{
+    color: #fff;
+    background: linear-gradient(135deg, #852d91, #312a6c);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    opacity: initial;
+}
+
+.btn:hover{
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    animation: rotate 0.7s ease-in-out both;
+}
+
+
+
+
+
+
+
+
